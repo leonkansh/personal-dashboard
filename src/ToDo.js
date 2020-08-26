@@ -10,7 +10,7 @@ function ToDo() {
 
   useEffect(() => {
     const todoList = localStorage.getItem('todoList');
-    if (todoList != null) {
+    if (todoList != null) { // not to read the local storage when it’s empty
       console.log(todoList); // currently todoList an object
       // parse string into JSON
       const todoData = JSON.parse(todoList);
