@@ -10,10 +10,12 @@ function ToDo() {
 
   useEffect(() => {
     const todoList = localStorage.getItem('todoList');
-    console.log(todoList); // currently todoList an object
-    // parse string into JSON
-    const todoData = JSON.parse(todoList);
-    setTodos(todoData);
+    if (todoList != null) {
+      console.log(todoList); // currently todoList an object
+      // parse string into JSON
+      const todoData = JSON.parse(todoList);
+      setTodos(todoData);
+    }
     // [] ensures that useEffect only runs once after reloading
   }, []);
 
