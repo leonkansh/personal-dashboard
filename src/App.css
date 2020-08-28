@@ -134,7 +134,14 @@ a {
   outline: none;
 }
 
-.Covid {
+.News {
+  margin: 32px 0px;
+  display: flex;
+  align-items: center;
+  font-size: 24px;
+}
+
+.Covid2 {
   margin: 32px 0px;
   display: flex;
   align-items: center;
